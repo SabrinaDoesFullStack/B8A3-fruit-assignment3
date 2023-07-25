@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fruit zone website</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
 </head>
@@ -16,10 +18,177 @@
 
   <header>
     <!-- navbar section -->
-    <nav>
+    <nav class="hidden md:block lg:block">
+
+      <div
+        class="navbar max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 bg-[#F85559] rounded-full flex-1 justify-between">
+        <div class="flex-1 list-none justify-between">
+          <ul class="flex justify-evenly text-white font-medium">
+            <li class="ml-3">Home</li>
+            <li class="ml-3">About Us</li>
+            <li class="ml-3">Shop</li>
+            <li class="ml-3">All Fruits</li>
+          </ul>
+        </div>
+        <div class="flex-1 ">
+          <img class="h-8 w-8" src="images/logo.png" alt="">
+          <h3 class="ml-2 font-bold text-2xl text-white">Fruit Burst</h3>
+        </div>
+        <div class=" gap-2 rounded-full  ">
+          <div class="form-control flex">
+            <input type="text" placeholder="Search" class="input rounded-3xl w-40 md:w-auto" />
+            <img class="w-4 h-4" src="images/Frame.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+      </div>
 
     </nav>
     <!-- end navbar  -->
+
+    <!-- navbar for phone -->
+    <nav class="md:hidden lg:hidden ">
+      <div class="flex justify-between  max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        <div class="flex">
+          <img class="h-8 w-8" src="images/logo.png" alt="">
+          <h3 class="ml-2 font-bold text-2xl text-black">Fruit Burst</h3>
+        </div>
+
+        <div class="flex">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </nav>
+    <!-- end nav for phone -->
+
+    <!-- start banner section -->
+
+    <section class=" max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+      <div class="carousel w-full bg-red-50">
+
+        <!-- slide - 1 -->
+
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-extrabold text-white">Exotic tastes at your
+                  <br> doorstep
+                </h1>
+                <p class="mb-5 font-light text-sm">Exotic tastes at your doorstep</p>
+                <button class="btn border-none bg-[#F85559] text-white font-semibold">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-extrabold text-white">Exotic tastes at your
+                  <br> doorstep
+                </h1>
+                <p class="mb-5 font-light text-sm">Exotic tastes at your doorstep</p>
+                <button class="btn border-none bg-[#F85559] text-white font-semibold">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-extrabold text-white">Exotic tastes at your
+                  <br> doorstep
+                </h1>
+                <p class="mb-5 font-light text-sm">Exotic tastes at your doorstep</p>
+                <button class="btn border-none bg-[#F85559] text-white font-semibold">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 4 -->
+
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero min-h-screen " style="background-image: url(./images/banner4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-extrabold text-white">Exotic tastes at your
+                  <br> doorstep
+                </h1>
+                <p class="mb-5 font-light text-sm">Exotic tastes at your doorstep</p>
+                <button class="btn border-none bg-[#F85559] text-white font-semibold">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- fruits section -->
+      <div class="hidden md:block lg:block">
+        <div
+          class=" -mt-14 flex justify-evenly gap-6 drop-shadow-lg bg-white p-5 lg:w-9/12 md:w-full  max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+          <div>
+            <img src="images/fruit1.png" alt="">
+            <h5 class="ml-10">Grape</h5>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="">
+            <h5 class="ml-10">orange</h5>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="">
+            <h5 class="ml-10">mango</h5>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="">
+            <h5 class="ml-10">Strawberry</h5>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="">
+            <h5 class="ml-10">pomegranate</h5>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- end banner section -->
 
   </header>
 
