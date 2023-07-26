@@ -1,0 +1,8 @@
+:root{
+  --bg-overlay : 214 , 20% , 21%;
+      --tw-opacity : 0.5;
+}
+.banner-bg-overly{
+ background-color: hsl(var(--bg-overlay) / var(--tw-bg-opacity));
+
+}
